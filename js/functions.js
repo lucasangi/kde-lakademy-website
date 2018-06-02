@@ -1,6 +1,6 @@
 
 function menuShow() {
-    var items = document.getElementsByClassName("navbar-item-collapse");
+    var items = document.getElementsByClassName("navbar-collapse-item");
 
     for( i=0 ; i < items.length ; i++ ){
         if (items[i].classList.contains("hide")) {
@@ -48,7 +48,7 @@ function validateForm(){
             dominio = email.substring( email.indexOf('@') , email.length ) ;
 
             if ( utilizador.length >= 1 && dominio.length >= 3 ){
-                msg = "Sucesso! Sua inscrição foi confirmada!"
+                msg = "Inscrição confirmada!"
                 type = "success-message";
             } else {
                 msg = "Informe um e-mail correto!"
@@ -63,12 +63,12 @@ function validateForm(){
         type = "error-message";
     }
 
-    document.getElementById( 'form-output').innerHTML = "<p class=\""+type+"\"> " + msg + "</>"
+    document.getElementById( "form-output" ).innerHTML = "<p class=\""+type+"\"> " + msg + "</>"
 
 }
 
 function cleanOutput(){
-    if( document.getElementById('form-output').innerHTML.match( "error-message" ) ){
-        document.getElementById('form-output').innerHTML = "" ;
+    if( document.getElementById( "form-output" ).innerHTML.match( "error-message" ) ){
+        document.getElementById( "form-output" ).innerHTML = "" ;
     }
 }

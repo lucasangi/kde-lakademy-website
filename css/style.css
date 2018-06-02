@@ -172,7 +172,7 @@ footer p{
     border: 1px solid white;
 }
 
-.navbar-header-collapse {
+.navbar-collapse-header {
     height: 3em;
 }
 
@@ -186,7 +186,7 @@ footer p{
 }
 
 .navbar-collapse-dropdown-item,
-.navbar-item-collapse {
+.navbar-collapse-item {
     color: white;
     display: block;
     text-align: center;
@@ -201,7 +201,7 @@ footer p{
     display: none;
 }
 
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
     .navbar {
         display: none;
     }
